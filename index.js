@@ -106,12 +106,12 @@ function findOrLoadZeroClipboard(){
     else {
         // load zeroclipboard from CDN
         // in production we want the minified version
-        var ZERO_CLIPBOARD_SOURCE = '//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard';
+        var ZERO_CLIPBOARD_SOURCE = '//cdn.expertise.com/zcb-2.2.0/ZeroClipboard';
         loadScript(process.env.NODE_ENV === 'production' ? ZERO_CLIPBOARD_SOURCE + '.min.js' : ZERO_CLIPBOARD_SOURCE + '.js', handleZeroClipLoad);
     }
 }
 
-// <ReactZeroClipboard 
+// <ReactZeroClipboard
 //   text="text to copy"
 //   html="<b>html to copy</b>"
 //   richText="{\\rtf1\\ansi\n{\\b rich text to copy}}"
