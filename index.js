@@ -53,7 +53,7 @@ var handleZeroClipLoad = function(error){
     delete global.ZeroClipboard;
 
     ZeroClipboard.config({
-      swfPath: '//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.swf'
+      swfPath: '//cdn.expertise.com/zcb-2.2.0/ZeroClipboard.swf'
     });
 
     client = new ZeroClipboard();
